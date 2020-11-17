@@ -1,0 +1,115 @@
+/*reset*/
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+html{
+    font-size: 62.5%;
+    background: #222 url('../asset/background.png') no-repeat fixed center center / cover;
+}
+
+body{
+    font: 1.6rem sans-serif;
+    margin-top: 0rem;
+
+}
+
+h1,h2,p,ol{
+    margin: 0rem;
+    padding: 0rem;
+    font-weight: 100;
+}
+/*fin de reset*/
+*{
+    box-sizing: border-box; 
+}
+header, main{
+    max-width: 90rem; 
+    border: 0.1rem solid transparent;
+    margin: 0 auto;  
+    background-color:rgba(255,255,255,0.8);
+    
+}
+:root{
+    --color-text_default:#fff ;
+    --color-h2-default: rgba(30, 139, 195, 1);
+    --color-h2-OnClick: rgba(200, 0, 0,0.8);
+}
+
+header{
+    margin: auto ; /*  la droit et gauche = auto  */  
+    text-align: center;
+    font-family: 'Zhi Mang Xing', cursive ;
+    font-size:  x-large;
+    padding: 1rem;
+}
+header h1::before{
+    padding-right: .8rem;
+    content: '\2605';
+    font-weight: bold;
+    font-size: xx-large;
+    color: #db3535;
+}
+nav ol{
+    margin: 1.0rem 0;
+    padding-left: 4.0rem;
+    text-transform: capitalize;
+}
+nav li{
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+main{
+    padding: .5rem;
+    
+}
+section img{ 
+    display: block;
+    width: 100%;
+    margin: 1rem .5rem 1rem .5rem  ;
+}
+nav h2, section h2{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin: 1.5rem .5rem 1.5rem .5rem  ;
+    padding:1rem .5rem 1rem .5rem ;
+    font-family: 'Zhi Mang Xing', cursive ;
+    background-color: var(--color-h2-default);
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--color-text_default);   
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    
+}
+
+section :target{
+    background-color: var(--color-h2-OnClick);
+}
+section p{
+    line-height: 2.6rem;
+    text-align: justify;
+    margin: 0.5rem;
+
+}
+section h2::after, nav h2::after{
+    padding-left: .8rem;
+    content: '\203A';
+    font-weight: bold;
+    font-size: xx-large;   
+}
+
+
+footer{
+    max-width: 90rem;
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+    background-color: black;
+    color: var(--color-text_default);
+    margin: auto; 
+}
+footer::before{
+    content: '\1F815';
+    padding-right: .5rem;
+    color: var(--color-text_default);
+    font-size: large;
+}
